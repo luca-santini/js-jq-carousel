@@ -35,9 +35,15 @@
     width: 90%;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 .slide img {
     max-width: 100%;
     max-height: 100%;
-
+}
+.bullets {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
