@@ -6,7 +6,7 @@ $('.next').click(function() {
     var img_corrente = $('img.active');
 
     // recupero il pallino img_corrente
-    var pallino_corrente = $('fa-circle.active');
+    var pallino_corrente = $('.fa-circle.active');
 
     // tolgo la classe active all'img corrente
     img_corrente.removeClass('active');
@@ -16,8 +16,8 @@ $('.next').click(function() {
 
     var img_successiva = img_corrente.next('img');
     // recupero il pallino successivo
-    var pallino_successivo = pallino_corrente.next('fa-circle');
-    // metto la classeactive al pallino successivo
+    var pallino_successivo = pallino_corrente.next('.fa-circle');
+    // metto la classe active al pallino successivo
 
     // verifico che esista un img successiva
     if (img_successiva.lenght !=0) {
